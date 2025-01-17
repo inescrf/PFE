@@ -1,12 +1,13 @@
-import { useState } from 'react'; // Retrait de useEffect
+import { useState } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import { FiDownload, FiFileText, FiImage, FiFile } from 'react-icons/fi';
-import { AiFillFilePdf } from 'react-icons/ai'; // Icône pour PDF
+import { AiFillFilePdf } from 'react-icons/ai';
 
 export default function Home() {
     const [file, setFile] = useState(null);
     const [message, setMessage] = useState('');
+    const [downloadLink, setDownloadLink] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
     const getFileIcon = () => {
@@ -31,6 +32,7 @@ export default function Home() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setMessage('');
+        setDownloadLink('');
         setIsLoading(true);
 
         if (!file) {
@@ -43,18 +45,19 @@ export default function Home() {
         formData.append('file', file);
 
         try {
-            const response = await fetch('http://localhost:5001/upload', {
+            const response = await fetch('http://localhost:5001/upload/pdf', {
                 method: 'POST',
                 body: formData,
             });
 
+            const data = await response.json();
+
             if (response.ok) {
-                const data = await response.json();
                 setMessage(data.message);
+                setDownloadLink(data.downloadLink);
                 setFile(null);
-                setTimeout(() => setMessage(''), 3000);
             } else {
-                setMessage('Erreur lors du téléchargement.');
+                setMessage(data.message || 'Erreur lors du traitement du fichier.');
             }
         } catch (error) {
             console.error('Erreur réseau :', error);
@@ -115,16 +118,22 @@ export default function Home() {
                     className="mt-6 bg-blue-900 text-white px-6 py-2 rounded-lg flex items-center justify-center mx-auto"
                     disabled={isLoading}
                 >
-                    <FiDownload className="mr-2" /> Télécharger
+                    <FiDownload className="mr-2" /> {isLoading ? 'Traitement...' : 'Télécharger'}
                 </button>
 
-                {isLoading && (
-                    <div className="flex justify-center items-center mt-4">
-                        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-900"></div>
+                {message && <p className="mt-4 text-green-500 text-center">{message}</p>}
+
+                {downloadLink && (
+                    <div className="mt-4 text-center">
+                        <a
+                            href={downloadLink}
+                            download
+                            className="text-blue-500 underline"
+                        >
+                            Cliquez ici pour télécharger le fichier texte extrait
+                        </a>
                     </div>
                 )}
-
-                {message && <p className="mt-4 text-green-500 text-center">{message}</p>}
             </main>
             <Footer />
         </div>
