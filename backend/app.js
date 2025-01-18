@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const pdfParse = require('pdf-parse');
 const cors = require('cors');
+const Tesseract = require('tesseract.js');
 
 const app = express();
 const PORT = 5001;
@@ -23,54 +24,59 @@ app.use(express.urlencoded({ extended: true }));
 // Route principale
 app.get('/', (req, res) => res.send('Backend is running!'));
 
-// Route pour traiter les fichiers PDF
-app.post('/upload/pdf', upload.single('file'), async (req, res) => {
-  try {
-    console.log('Requête reçue :', req.body); // Vérifie les données reçues
-    console.log('Fichier uploadé :', req.file); // Vérifie si Multer a bien traité le fichier
+// Fonction générique pour créer et retourner un fichier texte
+const createTextFile = (originalName, content) => {
+  const textFileName = `${path.basename(originalName, path.extname(originalName))}.txt`;
+  const textFilePath = path.join('uploads', textFileName);
+  fs.writeFileSync(textFilePath, content);
+  return textFilePath; // Retourne le chemin complet du fichier
+};
 
+// Route pour traiter les fichiers PDF et images
+app.post('/upload', upload.single('file'), async (req, res) => {
+  try {
     if (!req.file) {
-      console.error('Aucun fichier reçu.');
       return res.status(400).json({ message: 'Aucun fichier téléchargé.' });
     }
 
     const filePath = req.file.path;
     const fileExtension = path.extname(req.file.originalname).toLowerCase();
+    const allowedExtensions = ['.pdf', '.png', '.jpg', '.jpeg', '.bmp'];
 
-    // Vérifie si c'est un fichier PDF
-    if (fileExtension !== '.pdf') {
-      console.error('Type de fichier non supporté.');
+    if (!allowedExtensions.includes(fileExtension)) {
       return res.status(400).json({
-        message: 'Le type de fichier ne correspond pas au format attendu : veuillez soumettre un fichier PDF.',
+        message: 'Le type de fichier ne correspond pas au format attendu : veuillez soumettre un fichier PDF ou une image.',
       });
     }
 
-    console.log(`Fichier reçu : ${filePath}`);
+    let extractedText;
 
-    // Lire le contenu du fichier PDF
-    const dataBuffer = fs.readFileSync(filePath);
-    const pdfData = await pdfParse(dataBuffer);
+    if (fileExtension === '.pdf') {
+      // Extraction du texte d'un fichier PDF
+      const dataBuffer = fs.readFileSync(filePath);
+      const pdfData = await pdfParse(dataBuffer);
+      extractedText = pdfData.text;
+    } else {
+      // Extraction du texte d'une image
+      const { data } = await Tesseract.recognize(filePath, 'eng');
+      extractedText = data.text;
+    }
 
-    // Génère un fichier texte
-    const textFileName = `${path.basename(req.file.originalname, '.pdf')}.txt`;
-    const textFilePath = path.join('uploads', textFileName);
+    // Génération du fichier texte
+    const textFilePath = createTextFile(req.file.originalname, extractedText);
 
-    console.log(`Création du fichier texte : ${textFilePath}`);
-    fs.writeFileSync(textFilePath, pdfData.text);
-
-    console.log('Texte extrait avec succès.');
-
-    // Retourne le lien pour télécharger le fichier texte
-    res.status(200).json({
-      message: 'Texte extrait avec succès.',
-      downloadLink: `http://localhost:${PORT}/uploads/${textFileName}`,
+    // Envoie le fichier directement au téléchargement
+    res.download(textFilePath, (err) => {
+      if (err) {
+        console.error('Erreur lors de l\'envoi du fichier :', err);
+        res.status(500).json({ message: 'Erreur lors de l\'envoi du fichier.' });
+      }
     });
   } catch (error) {
     console.error('Erreur lors du traitement :', error.message);
-    res.status(500).json({ message: 'Erreur lors de l\'analyse du fichier PDF.' });
+    res.status(500).json({ message: 'Erreur lors de l\'analyse du fichier.' });
   }
 });
-
 
 // Rendre les fichiers téléchargeables
 app.use('/uploads', express.static('uploads'));

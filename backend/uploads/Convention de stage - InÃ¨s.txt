@@ -1,0 +1,495 @@
+
+
+GOULAMHOUSSEN Inès
+ÉCOLE D'INGÉNIEURS 
+ENGINEERING SCHOOL
+ECE Parts 2025
+#227716
+Septembre
+64
+Entre les soussignés :
+1/ Organisme d’accueil : Bouygues Telecom
+Adresse du siège social : 13 avenue du Maréchal Juin
+92360 MEUDON-LA-FORêT - FRANCE
+Lieu du stage : 13-15 Avenue de du Maréchal juin
+92360 Meudon la Forêt
+FRANCE
+Téléphone : - Fax :
+Représentant légal de l’Organisme d’accueil : GARNIER Johanna, Qualité : DRH SI
+Tuteur : DE BEIR Servane, Fonction : .CI^-^e-l^oj^nfomia&gWr-SL. 
+Téléphone : 0668585821 - Email : sdebeir@bouyguestelecom.fr oVjL.
+SobÛsL rclü-
+.l
+Ci-après dénommée « l’Entreprise », et
+2/ école : ECE
+37, Quai de Grenelle
+75015 Paris
+Représentée par : François STEPHAN, Fonction : Directeur Général de l’ECE Paris et,
+Enseignant référent : Hanen OCHI, Responsable de Majeure,
+E-Mail ; hochi@ece.fr, Tel :
+Ci-après dénommée « l’École », et
+3/stagiaire : GOULAIVIHOUSSEN Inès
+Date de naissance : 03/07/2002
+Intitulé de la formation ou du cursus suivi : Ingénieur diplômé de l’Ecole Centrale d’Electronique 
+Volume horaire par année ou semestre d’enseignement : 490 Fl.
+34 Rue Maurice Arnoux 
+92120 MONTROUGE
+Téléphone : +33651531364 - Email : ines,goulamhoussen@edu,ece.fr 
+Ci-après dénommé « le stagiaire »,
+Il a été arrêté et convenu ce qui suit ;
+Page 1
+Paraphe
+
+ARTICLE 1 : OBJET DE LA CONVENTION
+La présente convention a pour objet la mise en œuvre, au bénéfice du Stagiaire, de périodes de formation en milieu 
+professionnel réalisées dans le cadre de la préparation de son diplôme ou titre de l'enseignement supérieur et selon 
+le calendrier des stages prévu par le programme pédagogique en vigueur.
+ARTICLE 2 : FINALITÉ ET OBJECTIFS DU STAGE
+La finalité des périodes de formation en milieu professionnel est pédagogique. Le Stagiaire est associé aux activités 
+de l’Entreprise concourant directement au projet pédagogique défini par l'École.
+Le stage n'a qu’une vocation temporaire. En aucun cas, la participation du Stagiaire aux activités de l’Entreprise ne 
+doit porter préjudice à la situation de l’emploi dans l’Entreprise.
+Les objectifs du stage s’intégrent dans le projet pédagogique qui articule connaissances et compétences acquises 
+dans l’École par le Stagiaire et celles à acquérir pendant le stage dans l'Entreprise.
+Plus particulièrement, l’objectif du stage pour le Stagiaire est de mettre en œuvre les acquis de sa formation en vue 
+d’obtenir le diplôme ou titre préparé, et d’acquérir les compétences professionnelles nécessaires à l'obtention rapide 
+d'un premier emploi de cadre.
+ARTICLE 3 : ACTIVITES CONFIÉES AU STAGIAIRE
+L'Entreprise
+ s’engage à faire exécuter par le Stagiaire des travaux en relation avec sa formation. Le titre du stage est 
+le suivant : Stage de fin d'étude (6 mois)
+Lors du stage, le Stagiaire exercera les missions suivantes ;
+La Direction des Systèmes d'information (DSI) s'inscrit au cœur du business de Bouygues Telecom. Elle fournit 
+l'ensemble des SI commerciaux et de relation client. En imaginant et en mettant en œuvre les solutions, les équipes de 
+la DSI occupent une place stratégique dans l'ensemble des projets de Bouygues Telecom.
+En rejoignant l'équipe de Chefs de Projets Transverses de la Direction SI Offres / Vente & Client, vous travaillerez en 
+proximité directe des MOE majoritairement impactées par vos projets.
+Vous travaillerez particulièrement (environ 50% temps) avec la MOE Data / IA.
+Au sein de la direction de projet IT, votre mission consistera à accompagner les différents chefs de projet de l’équipe sur 
+la partie Data / commissionnement de leurs projets, à travailler à l’optimisation du suivi budgétaire des DP et des projets, 
+voire à piloter un ou plusieurs petits projets (dans le respect coût / qualité / délai / périmètre).
+Vous pourrez également contribuer au kit du nouveau chef de projet, ainsi qu’à la mise en place / optimisation d'outils de 
+pilotage de l'équipe.
+Au
+ sein de la direction Data / IA, votre mission consistera à participer au pilotage du projet de migration de l'ETL 
+Informatlca vers l'ETL Arcane (développement interne Bouygues Telecom). Afin de favoriser ce pilotage, vous 
+contribuerez à l'industrialisation, à l'optimisation et à l’enrichissement des KPI (Big Query, Tableau) permettant de suivre 
+l’avancement des actions de migration.
+Profil d'un chef de projet IT vers lequel tendre :
+Votre excellent relationnel et sens client qui vous permettent de travailler avec le Business et avec les interlocuteurs IT, 
+votre capacité à agir, à décider et à prendre des risques, votre capacité d'écoute, votre ouverture au changement, votre 
+rigueur, votre savoir-faire en termes de pilotage de projets informatiques, votre appétence aux méthodes agiles, et votre 
+capacité à sortir du cadre et trouver des solutions vous caractérisent.
+Les compétences à acquérir ou à développer sont les suivantes ;
+Liste des compétences à acquérir durant le stage (minimum trois compétences de la liste):
+- Compétence liées à la gestion de projet
+- Compétences liées à la sécurité et à l'évaluation des risques (IT, finance, industrie,...)
+- Compétences liées à la définition et à la mise en œuvre des processus administratifs (cartographie des processus 
+métier, définition des processus, SI, finance)
+Page 2
+Paraphe
+
+Il est interdit de confier au Stagiaire des tâches dangereuses pour sa santé ou sa sécurité.
+ARTICLE 4 : DUREE DU STAGE
+Le stage se déroulera du 12/02/2025 au 13/08/2025.
+Ceci représentant une durée totale de 125 Jours, Soit 5,7 Mois.
+Et correspondant à 125 jours de présence effective dans l'Organisme d'accueil.
+Il est rappelé que, conformément à l'article L 124-5 du Code de l'éducation, la durée du stage ne peut excéder six 
+mois
+ par année d'enseignement. Conformément à l’article L 124-18 du Code de l'éducation, cette durée s’apprécie 
+en tenant compte de la présence effective du Stagiaire dans l'Entreprise en cas de stage en présentiel ou dans le(s) 
+lieu(x) désigné(s) à l’article 5 en cas de stage à distance,
+En aucun cas la date de fin de stage ne pourra être postérieure à la date du jury de diplôme pour les stages de fin 
+d'études.
+En cas de survenance de circonstances exceptionnelles, telles qu’une crise sanitaire ou tout autre évènement 
+empêchant le déroulement normal du stage, celul-cl pourrait être suspendu ou interrompu. En cas de suspension, un 
+avenant à la convention prévoyant la reprise du stage dès la fin de l'évènement ayant entraîné sa suspension, devra 
+être signé entre les parties. En cas d'interruption du stage, une nouvelle convention sera signée en cas de possibilité 
+de reprise d'un stage.
+ARTICLE 5 : LIEU DU STAGE 
+Le stage se déroulera à :
+B! Stage en présentiel
+A l’adresse ci-dessous :
+13-15 Avenue de du Maréchal juin
+92360 Meudon la Forêt 
+FRANCE
+Service dans lequel le déroulement du stage est prévu : Direction de Projet 
+El Stage à distance (télétravail) ^ CjJIl
+ARTICLE 6 : DEROULEMENT DU STAGE - ORGANISATION DU TEMPS
+La durée hebdomadaire maximale de présence du Stagiaire dans le(s) lieu(x) désigné(s) à l’article 5 est de 35 
+heures' sur la base d'un temps complet, de même que pour les salariés de l’Entreprise.
+L'Entreprise doit suivre les règles applicables aux salariés de l'Entreprise pour ce qui a trait au repos quotidien et au 
+repos hebdomadaire du Stagiaire.
+L'Entreprise doit établir par tous moyens un décompte des temps de présence du Stagiaire. L’École pourra être 
+amenée à modifier le calendrier de formation et la répartition du temps de travail après en avoir informé l’Entreprise.
+' Remarque : La durée hebdomadaire maximale de présence du Stagiaire dans l’Entreprise ne pourra excéder 35 heures 
+sauf si la durée du travail conventionnelle applicable dans l’Entreprise est supérieure à la durée légale.
+Page 3
+Paraphe
+
+ARTICLE 7 : ACCUEIL ET ENCADREMENT DU STAGIAIRE
+Le Stagiaire est suivi par l'enseignant référent désigné dans la présente convention ainsi que par le service de 
+l’École en charge des stages.
+L
+’Entreprise choisit parmi son personnel un salarié volontaire qui sera tuteur, chargé d'accueillir, d'aider, d’informer, 
+d’encadrer et de guider le Stagiaire dans ses missions de formation professionnelle. Le tuteur est garant des 
+stipulations pédagogiques de la présente Convention. Il est choisi en tenant compte de son niveau de qualification, 
+de
+ l’objectif à atteindre et de sa motivation, il sera l'interlocuteur direct de l’enseignant référent au sein de l’École. 
+A ce titre, il doit prévenir l’École de toute difficulté rencontrée par le Stagiaire au cours de sa mission.
+MODALITES D'ENCADREMENT DU STAGIAIRE (visites, rendez-vous téléphoniques, etc.) :
+• Par l'enseignant référent :
+• Par le tuteur :
+ARTICLE 8 : STATUT DU STAGIAIRE
+Quel
+ que soit le montant de la gratification versée, l’élève Stagiaire conserve son statut d’étudiant ; il ne fait pas 
+partie des effectifs salariés de l'Entreprise. Toutefois, les nom et prénom du Stagiaire sont inscrits dans l'ordre 
+d’arrivée des Stagiaires, dans une partie spécifique au sein du registre unique du personnel, conformément à l’article 
+L 1221-13 du Code du travail.
+Le Stagiaire bénéficie des protections et droits relatifs à la liberté, au harcèlement moral et sexuel dans les mêmes 
+conditions que les salariés de l’Entreprise, conformément à l'article L 124-12 du Code de l’éducation.
+Pour les stages dont la durée est supérieure à deux mois et dans la limite de la durée maximale de six mois, des 
+congés ou autorisations d'absence sont possibles.
+NOMBRE DE JOURS DE CONGES AUTORISES / ou modalités des congés et autorisations d'absence durant le 
+stage :
+6
+En outre, l'Entreprise autorisera le Stagiaire à s'absenter en cas d'obligations pédagogiques dûment attestées par 
+l'École, quelle que soit la durée du stage.
+En cas de grossesse, de paternité ou d’adoption, ie Stagiaire bénéficie de congés et d’autorisations d’absence d’une 
+durée équivalente à celle prévue pour les salariés, conformément à l'article L 124-13 du Code de l’éducation.
+Le Stagiaire accède aux activités sociales et culturelles dans les mêmes conditions que le salarié conformément à 
+l’article L 2323-83 du Code du travail.
+ARTICLE 9 ; PROTECTION SOCIALE
+Pendant la durée du stage, le Stagiaire conserve son statut d’étudiant.
+9.1 Régime et cotisations
+9.1.1 Gratification inférieure ou égale au produit de 16 % du plafond horaire de la sécurité sociale par le nombre 
+d'heures de stage effectuées au cours du mois considéré :
+Dans ce cas, conformément à la législation en vigueur, la gratification de stage n’est pas soumise à cotisations 
+sociale. Le Stagiaire bénéficie de la législation sur les accidents du travail au titre du régime étudiant de l'article 
+L 412-8-2“ du Code de la Sécurité sociale. Le paiement des cotisations AT/MP Incombe à l’École.
+9.1.2 Gratification supérieure au produit de 15 % du plafond horaire de la Sécurité sociale par le nombre 
+d'heures de stage effectuées au cours du mois considéré :
+Les sommes versées prennent alors le caractère d’une rémunération. Les cotisations sociales sont calculées 
+sur le différentiel entre le montant de la gratification et 15 % du plafond horaire de la Sécurité sociale par le 
+nombre d’heures de stage effectuées au cours du mois considéré. L'étudiant bénéficie de la couverture légale 
+en application des dispositions des articles L 411-1 et suivants du Code de la Sécurité sociale. Le paiement des 
+cotisations AT/MP incombe à l’Entreprise.
+Page 4
+Paraphe
+
+9.2 Déclaration accident du travail
+9.2.1 Quand l'accident survient du fait ou à l'occasion du stage, que ce soit dans l’Organisme d’accueil, au 
+cours du trajet ou sur les lieux rendus utiles pour les besoins du stage, l'Entreprise a l’obligation de déclarer cet 
+accident du travail conformément à l’article L441-2 et l’article R412-4 du Code de la Sécurité sociale.
+9.2.2 Quand l'accident survient du fait ou à l'occasion de l'enseignement ou de la formation dispensée par 
+l'École, l'obligation de déclaration accident du travail incombe à l'École.
+9.2.3  Dans tous les cas la déclaration doit être envoyée sous 48H à la caisse primaire d'assurance maladie 
+dont relève l'élève. Chaque partie qui déclare l’accident du travail adresse une copie de cette déclaration à 
+l’autre partie concernée.
+9.3 Déplacements
+En cas de déplacement, il appartient à l'Entreprise d’établir, dans tous les cas, un descriptif nominatif de la 
+nature du déplacement et d’en Informer l’École.
+Les déplacements à l’étranger doivent impérativement être signalés par écrit à l'École au moins quinze jours 
+avant la date prévue de départ. Le Stagiaire doit signaler ces déplacements à la sécurité sociale et obtenir son 
+accord avant le départ lorsque le montant de gratification est inférieur ou égal au seuil de 15 % précité (en 
+fonction des différentes procédures des CPAM).
+Lorsque
+ ces conditions ne sont pas remplies, l’Entreprise s’engage à cotiser pour la protection de l’élève 
+Stagiaire et à faire les déclarations nécessaires en cas d'accident du travail.
+ARTICLE 10 : RESPONSABILITE CIVILE ET ASSURANCES
+Chacune des trois parties (Entreprise, École, Stagiaire) déclare être garantie au titre de la responsabilité civile.
+Lorsque l'Entreprise met un véhicule à la disposition du Stagiaire, il lui incombe de vérifier préalablement que la 
+police d’assurance du véhicule couvre son utilisation par un élève Stagiaire.
+Lorsque, dans le cadre de son stage, l'élève Stagiaire utilise son propre véhicule ou un véhicule prêté par un tiers, il 
+déclare expressément à l'assureur dudit véhicule cette utilisation qu'il est amené à faire et le cas échéant s'acquitte 
+de la prime afférente.
+Page 5
+Paraphe
+
+ARTICLE 11 : GRATIFICATIONS2 - REMBOURSEMENT DE FRAIS
+11.1 Principe
+Le stage fait obligatoirement l’objet d'une gratification lorsque la durée du stage en Entreprise privée ou 
+publique, en association, en Etablissement Public Industriel ou Commercial, en Etablissement Public de l'Etat 
+ne présentant pas un caractère industriel et commercial et en administration est supérieure à deux mois 
+consécutifs ou non consécutifs. L'organisme d'accueil peut décider de verser une gratification pour les stages 
+dont la durée est inférieure ou égale à deux mois.
+La gratification due par un organisme de droit public ne peut être cumulée avec une rémunération versée par ce 
+même organisme au cours de la période concernée.
+Les durées s’apprécient en tenant compte de la convention de stage et de ses éventuels avenants, ainsi que du 
+nombre de jours de présence effective du Stagiaire dans le(s) lieu(x) désigné(s) à l’article 5.
+Le montant minimal de la gratification est fixé à 15 % du plafond horaire de la sécurité sociale défini en 
+application de l’Article L241-3 du Code de la Sécurité Sociale, En cas de revalorisation du plafond de la 
+Sécurité Sociale au cours de la durée de la convention, le montant de la gratification minimale sera 
+automatiquement revalorisé à compter de la date de revalorisation dudit plafond (1er Janvier), sans besoin 
+d’avenant.
+Pour les stages dans les administrations et les Etablissements publics de l’Etat ne présentant pas un caractère 
+industriel et commercial, la gratification est intangible et strictement égale au plafond précisé ci-dessus.
+La gratification est due au Stagiaire sans préjudice du remboursement des frais engagés pour effectuer le stage 
+et des avantages offerts pour la restauration, l’hébergement et le transport, dans les mêmes conditions que les 
+salariés de l'Entreprise,
+En cas de suspension, d'interruption ou de résiliation de la convention de stage, le montant de la gratification 
+due au Stagiaire est proratisé en fonction de la durée de stage effectuée.
+11.2 Montant de la gratification
+Pour le stage, objet des présentes, la gratification mensuelle est fixée à 1800 Euros (EUR) bruts. Ce montant 
+est valable pour une présence effective du Stagiaire dans l'Entreprise d'une durée de 151.67 heures par mois, 
+et en tenant compte de la valeur du plafond horaire de la sécurité sociale en vigueur à la date de signature de la 
+présente convention.
+11.3 Modalités de versement de la gratification
+La gratification est due dès le premier Jour du premier mois de stage. Elle est versée mensuellement.
+Versement chaque mois d<aun même montant correspondant au lissage, sur la totalité de la durée de stage, du 
+temps de présence réellement effectué.
+11.4 Remboursement de frais
+Le Stagiaire a accès au restaurant d'Entreprlse ou aux titres-restaurants prévus à l’article L 3262-1 du Code du 
+travail, dans les mêmes conditions que les salariés de l’Organisme d’accueil.
+Les frais de déplacement et d'hébergement engagés par le Stagiaire à la demande de l'Entreprise, ainsi que les 
+frais de formation éventuellement nécessités par le stage, seront intégralement pris en charge par l'Entreprise 
+selon les modalités en vigueur, au moins aussi favorables que pour les salariés de l’Organisme d’accueil.
+Lorsque le stage se déroule dans les administrations ou les établissements publics de l'Etat, les frais de mission 
+du Stagiaire relèvent du décret n°2006-781 du 3 Juillet 2006. La prise en charge des trajets domicile-lieu de 
+stage est fixée par le décret n°2010-676 du 21 juin 2010.
+Liste des avantages offerts au Stagiaire :
+2 Remarque : si une convention de branche ou un accord professionnel étendu applicable à l'Entreprise prévoit le montant de 
+la gratification, le montant de la gratification indiqué dans la convention de stage devra au moins être égal à celui indiqué 
+dans
+ cette convention de branche ou dans cet accord professionnel étendu.
+Page 6
+Paraphe
+
+ARTICLE 12; DISCIPLINE- DEVOIR DE RESERVE ET CONFIDENTIALITE
+Du fait de sa présence dans l'Entreprise, le Stagiaire est soumis aux règles générales en vigueur dans l'Entreprise. Il 
+est donc soumis au règlement Intérieur qui lui sera communiqué par l’Entreprise, notamment en matière de sécurité, 
+d'hygiène et de discipline générale (accès à l'Entreprise, utilisation du matériel et des moyens de communication, 
+confidentialité, visites médicales, respect des consignes de santé, d’hygiène et de sécurité, etc,).
+En revanche, les dispositions relatives à la procédure disciplinaire et aux sanctions ne sont pas applicables au 
+Stagiaire.
+En cas de travail à distance, le Stagiaire devra prendre toutes les précautions utiles pour qu'aucun tiers non autorisé 
+ne puisse avoir accès aux données, mots de passe, et plus généralement toutes Informations concernant l’Entreprise 
+ou ses clients. Il devra faire les sauvegardes régulièrement et prendra toutes mesures de sécurité notamment en 
+empêchant tout accès à des tiers aux données enregistrées.
+Le devoir de réserve est de rigueur absolue. Les élèves Stagiaires prennent donc l’engagement de n'utiliser en 
+aucun cas les informations recueillies ou obtenues par eux pour en faire l'objet de publication, communication à des 
+tiers sans l’accord préalable de la Direction de l'Entreprise, y compris le rapport de stage. Cet engagement vaudra 
+non
+ seulement pour la durée du stage mais également après son expiration. Le Stagiaire s’engage à ne conserver, 
+emporter, ou prendre copie d'aucun document ou logiciel, de quelque nature que ce soit, appartenant à l'Entreprise, 
+sauf accord écrit de cette dernière.
+Dans le cadre de la confidentialité des informations contenues dans le rapport, l'Entreprise peut demander une 
+restriction de diffusion du rapport, voire le retrait de certains éléments confidentiels. Les personnes amenées à en 
+connaître sont contraintes par le secret professionnel à n’utiliser ni ne divulguer les informations du rapport.
+ARTICLE 13 : DEROULEMENT DE LA PERIODE - RUPTURE DE LA CONVENTION 
+Toute absence du Stagiaire devra être signalée par l'Entreprise à l’École.
+Le tuteur et l’enseignant référent se tiendront mutuellement informés des difficultés qui pourraient être rencontrées à 
+l’occasion de la période de formation dans l'Entreprise. Le cas échéant, Ils prendront, d'un commun accord, les 
+dispositions visant à résoudre les problèmes d’absentéisme ou de manquement à la discipline. Au besoin, ils 
+étudieront ensemble les modalités de suspension ou de résiliation du stage.
+Le stage peut être suspendu ou interrompu pour raisons médicales ou pour un motif lié à la grossesse, à la paternité 
+ou à l'adoption. Dans ce cas, un avenant comportant les aménagements requis ou la rupture de la convention de 
+stage sera conclu. En cas d'accord des Parties, un report de la fin du stage est possible afin de permettre la 
+réalisation de la durée totale du stage prévue initialement. Une modalité de validation du stage est mise en place le 
+cas
+ échéant par l’École.
+En cas de manquement grava à la discipline de l'Entreprise par le Stagiaire, le chef d'Entreprise a le droit de mettre 
+fin à la convention de stage après en avoir informé l’enseignant référent et le Stagiaire par lettre recommandée.
+Réciproquement,
+ le Stagiaire peut rompre la convention de stage après avoir informé de sa décision son tuteur par 
+lettre recommandée et ayant eu au préalable l'accord de l'École.
+En cas de volonté de l'une des trois parties d'arrêter le stage, celle-ci doit immédiatement en informer les deux autres 
+pallies par écrit. Les raisons invoquées seront examinées en étroite concertation, La décision définitive d'arrêt du 
+stage ne sera prise qu’à l'issue de cette phase de concertation.
+Dans tous les cas de résiliation de la convention de stage, un délai de prévenance de 15 jours est souhaité.
+ARTICLE 14 : PROPRIETE INTELLECTUELLE
+Les règles du Code de la Propriété Intellectuelle s’appliquent à toutes les productions du Stagiaire, Le cas échéant, 
+un contrat de cession de droits de propriété intellectuelle devra être signé entre le Stagiaire et l'Organisme d’accueil 
+dans le respect des conditions édictées par le Code de la Propriété Intellectuelle.
+Page 7 
+Paraphe
+
+ARTICLE 15 : RESPECT DES MESURES SANITAIRES
+Dans le contexte de la crise sanitaire liée au COVID-19, l'Entreprise s’engage à mettre en place les mesures 
+sanitaires d’hygiène et de sécurité nécessaires et imposées par le gouvernement (notamment l'utilisation 
+d’équipements de protection du type masques, visières, gants, etc., respect de la distanciation sociale, etc.) en cas 
+de travail en présentiel.
+Le Stagiaire s'engage à respecter les règles d'hygiène et de sécurité en vigueur dans l'Organisme d'accueil et à 
+signaler tous dysfonctionnement en la matière à l’Entreprise et l'Ecole.
+A ce titre, l’Entreprise et le Stagiaire s'engagent à respecter strictement le protocole national du 31 août 2020 et tous 
+les nouveaux protocoles ou les nouvelles dispositions s’y substituant à l’avenir.
+ARTICLE 16 : STAGE A DISTANCE
+Compte-tenu des circonstances exceptionnelles dues à la pandémie de Covid 19, il est entendu entre les parties 
+qu’elles auront vérifié au préalable que les missions confiées au Stagiaire se prêtent à un travail en présentiel et/ou à 
+distance et que le Stagiaire dispose du matériel adéquat.
+Le stage ne pourra être réalisé en présentiel que dans le strict respect du protocole national du 31 août 2020 et de 
+toute disposition hygiène, sécurité et santé applicable à l'Organisme d’accueil.
+La réalisation du stage à distance nécessite que les parties signataires de la convention soient Informées et donnent 
+leur accord. Dans cette hypothèse, le Stagiaire reste sous l'autorité de l’Entreprise et reste soumis aux dispositions 
+de la présente convention de stage.
+En cas de confinement, le stage basculera automatiquement en stage à distance ou fera l’objet d’une suspension par 
+avenant en cas d’impossibilité de stage à distance.
+Le télétravail prendra fin et le Stagiaire devra retourner effectuer son stage dans le lieu de travail prévu dans la 
+Convention, dès la levée de la mesure interdisant de se déplacer de son domicile à son lieu de stage, après accord 
+de l’Entreprise et de l'Ecole.
+ARTICLE 17 : EVALUATION DU STAGE
+A l'issue du stage, l’Entreprise délivre au Stagiaire une attestation de stage (voir annexe 6) et remplit une fiche 
+d’évaluation qu’elle retourne à l’École. Suivant le règlement pédagogique en vigueur, l’École évalue la restitution 
+fournie par le Stagiaire, qui prendra la forme d’un rapport de stage, A son tour, le Stagiaire transmet à l’enseignant 
+référent un document dans lequel il évalue la qualité de l'accueil dont il a bénéficié au sein de l’Entreprise. Ce 
+document n’est pas pris en compte dans son évaluation ou dans l'obtention du diplôme ou de la certification.
+ARTICLE 18 : RECRUTEMENT
+Si un contrat de travail liant l’Entreprise et le Stagiaire prend effet avant la date de fin du stage, la présente 
+convention deviendra caduque. Cependant cela n’exonère pas l'Etudiant de ses obligations académiques. Le 
+Stagiaire devra impérativement en prévenir l’École et lui adresser une attestation d'embauche. Un avenant sera 
+signé
+ par les parties et mettra fin à la période de stage.
+ARTICLE 19 : MODIFICATIONS PAR AVENANT
+Un avenant à la convention pourra être établi en cas de modification des conditions du stage faite à la demande de 
+l'Entreprise, du Stagiaire et/ou de l’École.
+ARTICLE 20 : DROIT APPLICABLE - TRIBUNAUX COMPETENTS 
+La présente convention est régie exclusivement par le droit français.
+Tout litige non résolu par voie amiable sera soumis à la juridiction française compétente.
+Page 8 
+Paraphe
+V'
+
+ARTICLE 21 : DOCUMENTS ANNEXES
+Est annexé à la présente convention
+« L'Annexe 1 : La Charte des stages étudiants en Entreprise 
+6 L'Annexe 6 : L'attestation de stage
+Fait à
+en trois exemplaires, le
+1 - Nom et signature du Stagiaire (et son représentant légal le cas échéant) 
+GOULAMHOUSSEN Inès
+2 - Nom et signature du représentant de l’École et cachet de l’École 
+François STEPHAN
+3 - Nom et signature de l'enseignant référent 
+Hanen OCHI
+4 - Nom et signature du représentant de l’Organisme d’accueil et cachet de l’Organisme
+■fVîUKa?
+/
+-V- r
+5
+ - Nom et signature du tuteur
+Page 9
+Paraphe
+
+ANNEXE 1
+CHARTE DES STAGES ETUDIANTS EN ENTREPRISE
+26 avril 2006
+I- Introduction
+Le développement des stages est aujourd'hui fondamental en matière d'orientation et d'insertion professionnelle des jeunes. En effet, le stage permet la mise en œuvre de connaissances 
+théoriques dans un cadre professionnel et donne à l'étudiant une expérience du monde de l'entreprise et de ses métiers.
+Dans cette perspective, il est fondamental de rappeler que les stages ont une finalité pédagogique, ce qui signifie qu’ii ne peut y avoir de stage hors parcours pédagogique. En aucun cas un stage 
+ne peut être considéré comme un emploi.
+La présente charte, qui a été rédigée par les services de l'Etat, les représentants des entreprises, les représentants des établissements d'enseignement supérieur, et les représentants des 
+étudiants, a dès lors pour objectif de sécuriser la pratique des stages, tout en favorisant leur développement bénéfique à ja fols pour les jeunes et pour les entreprises.
+II- Champs, définition
+1- Le champ de la charte
+Le champ de la charte concerne tous les stages d'étudiants en entreprise, sans préjudice des règles particulières applicables aux professions réglementées.
+2- Le stage
+La finalité du stage s'inscrit dans un projet pédagogique et n'a de sens que par rapport à ce projet. Dès lors le stage :
+• permet Ja mise en pratique des connaissances en milieu professionnel ;
+« facilite le passage du monde de l'enseignement supérieur à celui de l’entreprise.
+Le stage ne peut en aucun cas être assimilé à un emploi.
+III- Encadrement du stage
+■1- La formalisation du projet de stage
+Le projet de stage fait l’objet d'une concertation entre un enseignant de rétablissement, un membre de l'entreprise et l'étudiant. Ce projet de stage est formalisé dans la convention signée par 
+l'établissement d’enseignement, l'entreprise et le stagiaire.
+2- La convention
+La convention précise les engagements et les responsabilités de l’établissement d'enseignement, de l’entreprise et de l’étudiant. Les rubriques obligatoires sont mentionnées en annexe à la 
+charte.
+3- Durée du stage
+La durée du stage est précisée dès les premiers contacts enlre rétablissement d’enseignement et l'entreprise. L’étudiant en est tenu informé.
+La durée du stage figure explicitement dans la convention de stage.
+4- Les responsables de l’encadrement
+Tout stage fait l’objet d’un double encadrement par :
+* un enseignant de l'établissement ;
+« un membre de l'entreprise.
+L’enseignant et le membre de l'entreprise travaillent en collaboration, sont Informés et s'informent de l’état d'avancement du stage et des difficultés éventuelles.
+Le responsable du stage au sein de l'établissement d'enseignement est le garant de l'articulation enlre les finalités du cursus de formation et cetfes du stage, selon fes principes do (a présente 
+charte. Leurs Institutions respectives reconnaissent la nécessité de leur investissement, notamment en temps, consacré à l'encadrement.
+5- Evaluation
+a- Evaluation du stagiaire
+L’activité du stagiaire fait l'objet d’une évaluation qui résulte de Ja double appréciation des responsables de l'encadrement du stage. Chaque établissement d’enseignement décide de la valeur 
+qu’il accorde aux stages prévus dans le cursus pédagogique. Les modalités concrètes d’évaluation sont mentionnées dans la convention. L’évaluation est portée dans une « fiche d’évatualion » 
+qui, avec la convention, constitue le « dossier de stage ». Ce dossier do stage est conservé par l’établissement d’enseignement, 
+b- Evaluation du stage : Les signataires de la convention sont Invités à formuler une appréciation de la qualité du stage.
+IV- Engagement des parties
+1- L’étudiant vis-à-vis de l’entreprise
+L’étudiant s'engage à :
+* réaliser sa mission et êlre disponible pour fes fâches qui fui sont confiées ;
+♦ respecter les règles de l'entreprise ainsi que ses codes et sa culture ;
+« respecter les exigences de confidentialité fixée par l'entreprise ;
+♦ rédiger, lorsqu’il est exigé, le rapport ou la mémoire dans les délais prévus ; ce document devra être présenté aux responsables de l'entreprise avant d'être soutenu (s! le contenu le 
+nécessite,
+ le mémoire pourra, à la demande de l'entreprise, rester confidentiel).
+2- L’entreprise vis-à-vis de l'étudiant
+L'entreprise s'engage à :
+« Proposer un stage s'inscrivant dans la projet pédagogique défini par l'établissement d’enseignement ;
+* Accueillir l'étudiant et lui donner les moyens de réussir sa mission ;
+• Désigner un responsable de stage ou une équipe tulorale dont la tâche sera de :
+o Guider et conseiller l'étudiant ;
+o L’informer sue les règles, les codes et la culture de l'entreprise :
+o Favoriser son Intégration au sein de l'entreprise et l'accès aux informations nécessaires ;
+o L'aider dans l'acquisition des compétences nécessaires ; 
+o Assurer un suivi régulier de ses travaux ; 
+o Evaluer la qualité du travail effectué ; 
+o Le conseiller sur son projet professionnel ;
+o Rédiger une attestation de stage décrivant les missions effectuées qui pourra accompagner les futurs curriculum vltae de l'étudiant.
+3- L’établissement d’enseignement supérieur vls^à-vls de l’étudiant
+L'établissement d’enseignement s’engage à :
+• Définir les objectifs du stage et s’assurer que le stage proposé y répond ;
+• Accompagner l'étudiant dans la recherche de stage ;
+• Préparer l'étudiant au stage ;
+* Assurer le suivi de l'étudiant pendant la durée de son stage, en lui alfectanl un enseignant qui veillera au bon déroulement du stage ; mettre à la disposition de ce dernier les outils 
+nécessaires à l'appréciation de la qualité du stage par l'étudiant ;
+• Pour les formations supérieures qui l’exigent, le guider et le conseiller dans la réalisation de son rapport do stage ou de son mémoire et organiser ia soutenance en permettant à un 
+représentant
+ de l’entreprise d’y participer.
+4- L’entreprise et l’établissement d’enseignement
+L’entreprise et l’établissement d’enseignement supérieur veillent à échanger les informations nécessaires avant, pendant et après le stage.
+Ils respectent par ailleurs leurs règles respectives de confidentialité et de déontologie.
+5- L’étudiant vis-à-vis des établissements d’enseignement
+L’étudiant s’engage à fournir l'appréciation de la qualité de son stage à son établissement d'enseignement.
+
+ATTESTATION DE STAGE
+_________A remettre au stagiaire à l’issue du stage_________
+ORGANISME D’ACCUEIL
+Nom ou dénomination sociale : Bouygues Telecom 
+Adresse : 13 avenue du Maréchal Juin 
+92360 MEUDON-LA-FORêT 
+Téléphone :
+CERTIFIE QUE
+LE STAGIAIRE
+Nom : GOULAMHOUSSEN Prénom : Inès Né(e) le : 03/07/2002 
+Adresse : 34 Rue Maurice Arnoux 
+92120 MONTROUGE
+Téléphone : +33651531364 Courriel : ines.goulamhoussen@edu.ece.fr
+ETUDIANT EN : ECE Paris 2025 
+AU SEIN DE : ECE
+A EFFECTUÉ UN STAGE DANS LE CADRE DE SES ÉTUDES
+DURÉE DU STAGE
+Dates du stage : Du 12/02/2025 au 13/08/2025 
+Représentant
+ une durée de : 125 Jours, Soit 5,7 Mois
+La durée totale du stage est appréciée en tenant compte de la présence effective du stagiaire dans l'organisme, sous réserve des 
+droits à congés et autorisations d'absence prévus à l'article L.124-13 du code de l'éducation (art. L.124-18 du code de l'éducation). 
+Chaque période au moins égale à 7 heures de présence consécutives ou non est considérée comme équivalente à un jour de stage 
+et chaque période au moins égale à 22 jours de présence consécutifs ou non est considérée comme équivalente à un mois.
+MONTANT DE LA GRATIFICATION VERSÉE AU STAGIAIRE
+Le stagiaire a perçu une gratification de stage pour un montant de : 1800 Euros (EUR) bruts par 
+mois.
+L'attestation de stage est indispensable pour pouvoir, sous 
+réserve du versement d'une cotisation, faire prendre en compte le 
+stage dans les droits à retraite, La législation sur les retraites (loi 
+n “2014-40 du 20 Janvier 2014) ouvre aux étudiants dont le stage 
+a été gratifié la possibilité de faire valider celui-ci dans la limite de 
+deux trimestres, sous réserve du versement d'une cotisation. 
+La demande est à faire par l'étudiant dans les deux années 
+suivant la fin du stage et sur présentation obligatoire de 
+l'attestation de stage mentionnant la durée totale du stage et le 
+montant total de la gratification perçue. Les informations précises 
+sur la cotisation à verser et sur la procédure à suivre sont à 
+demander auprès de la sécurité sociale (code de la sécurité sociale 
+art, L.351-17 -code de l'éducation art.,D.124-9).________________
+FAIT A JlûTÀafu........................
+LE ...TaF/q|../.2.S.......................
+Nom, fonction, signature du représentant et cachet de l'organisme 
+d'accueil _ _ \
