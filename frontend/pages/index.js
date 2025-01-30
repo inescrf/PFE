@@ -8,10 +8,10 @@ export default function Home() {
   const [file, setFile] = useState(null);
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [analysisResult, setAnalysisResult] = useState(null);
 
   const getFileIcon = () => {
     if (!file) return null;
-
     const fileType = file.type;
     if (fileType.includes('pdf')) return <AiFillFilePdf className="text-red-600 h-6 w-6" />;
     if (fileType.includes('image')) return <FiImage className="text-blue-600 h-6 w-6" />;
@@ -20,17 +20,16 @@ export default function Home() {
   };
 
   const handleDragOver = (e) => e.preventDefault();
-
   const handleDrop = (e) => {
     e.preventDefault();
     setFile(e.dataTransfer.files[0]);
   };
-
   const handleFileChange = (e) => setFile(e.target.files[0]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMessage('');
+    setAnalysisResult(null);
     setIsLoading(true);
 
     if (!file) {
@@ -49,18 +48,12 @@ export default function Home() {
       });
 
       if (response.ok) {
-        const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = file.name.replace(/\.[^/.]+$/, '.txt'); // Remplace l'extension par .txt
-        document.body.appendChild(link);
-        link.click();
-        link.remove();
-        setMessage('Texte extrait avec succès.');
-      } else {
         const data = await response.json();
-        setMessage(data.message || 'Erreur lors du traitement du fichier.');
+        setMessage('Analyse réussie ! Voici les résultats :');
+        setAnalysisResult(data.analysis);
+      } else {
+        const errorData = await response.json();
+        setMessage(errorData.message || 'Erreur lors du traitement du fichier.');
       }
     } catch (error) {
       console.error('Erreur réseau :', error);
@@ -102,16 +95,8 @@ export default function Home() {
             <p className="text-sm text-gray-500 mt-2">Aucun fichier sélectionné</p>
           )}
 
-          <input
-            type="file"
-            onChange={handleFileChange}
-            className="hidden"
-            id="file-upload"
-          />
-          <label
-            htmlFor="file-upload"
-            className="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-4"
-          >
+          <input type="file" onChange={handleFileChange} className="hidden" id="file-upload" />
+          <label htmlFor="file-upload" className="cursor-pointer bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-4">
             Choisir un fichier
           </label>
         </div>
@@ -124,14 +109,22 @@ export default function Home() {
           <FiDownload className="mr-2" /> {isLoading ? 'Traitement...' : 'Soumettre'}
         </button>
 
-        {message && (
-          <p
-            className={`mt-4 text-center ${
-              message.includes('Le type de fichier') ? 'text-orange-500' : 'text-green-500'
-            }`}
-          >
-            {message}
-          </p>
+        {message && <p className="mt-4 text-center text-green-500">{message}</p>}
+
+        {analysisResult && (
+          <div className="mt-6 bg-gray-100 p-4 rounded-lg shadow-lg">
+            <h2 className="text-xl font-bold text-gray-700 mb-4">Résultats de l'analyse</h2>
+            <p><strong>Type de contrat :</strong> {analysisResult.type_contrat}</p>
+            <h3 className="text-lg font-semibold text-gray-600 mt-4">Vices détectés :</h3>
+            <ul className="list-disc pl-5">
+              {analysisResult.vices.map((vice, index) => (
+                <li key={index} className="mb-2">
+                  <strong className="text-red-500">{vice[0]}</strong>: {vice[1]}  
+                  <br /><span className="text-sm text-gray-600">⚠️ {vice[2]}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         )}
       </main>
       <Footer />

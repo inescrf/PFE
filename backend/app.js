@@ -5,6 +5,7 @@ const path = require('path');
 const pdfParse = require('pdf-parse');
 const cors = require('cors');
 const Tesseract = require('tesseract.js');
+const { spawn } = require('child_process');
 
 const app = express();
 const PORT = 5001;
@@ -16,23 +17,47 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-// Middleware
 app.use(cors({ origin: '*' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Route principale
 app.get('/', (req, res) => res.send('Backend is running!'));
 
-// Fonction générique pour créer et retourner un fichier texte
-const createTextFile = (originalName, content) => {
-  const textFileName = `${path.basename(originalName, path.extname(originalName))}.txt`;
-  const textFilePath = path.join('uploads', textFileName);
-  fs.writeFileSync(textFilePath, content);
-  return textFilePath; // Retourne le chemin complet du fichier
+// Fonction pour exécuter le script Python avec le bon chemin
+const runPythonAnalysis = (textFilePath) => {
+  return new Promise((resolve, reject) => {
+    const scriptPath = path.join(__dirname, 'analyze.py'); // Chemin absolu du script Python
+
+    console.log(`Exécution du script Python : ${scriptPath}`);
+
+    const pythonProcess = spawn('/Users/ines/.pyenv/versions/3.10.12/bin/python3', [scriptPath, textFilePath]);
+
+    let result = '';
+    pythonProcess.stdout.on('data', (data) => {
+      result += data.toString();
+    });
+
+    pythonProcess.stderr.on('data', (data) => {
+      console.error(`Erreur Python : ${data}`);
+      reject(data.toString());
+    });
+
+    pythonProcess.on('close', (code) => {
+      console.log("Sortie brute du script Python :", result);  // ✅ Ajout du log
+      if (code === 0) {
+        try {
+          resolve(JSON.parse(result));
+        } catch (error) {
+          reject(`Erreur lors du parsing du JSON : ${result}`);
+        }
+      } else {
+        reject(`Processus terminé avec le code ${code}`);
+      }
+    });
+  });
 };
 
-// Route pour traiter les fichiers PDF et images
+// Route de traitement des fichiers
 app.post('/upload', upload.single('file'), async (req, res) => {
   try {
     if (!req.file) {
@@ -44,44 +69,35 @@ app.post('/upload', upload.single('file'), async (req, res) => {
     const allowedExtensions = ['.pdf', '.png', '.jpg', '.jpeg', '.bmp'];
 
     if (!allowedExtensions.includes(fileExtension)) {
-      return res.status(400).json({
-        message: 'Le type de fichier ne correspond pas au format attendu : veuillez soumettre un fichier PDF ou une image.',
-      });
+      return res.status(400).json({ message: 'Type de fichier non supporté.' });
     }
 
     let extractedText;
 
     if (fileExtension === '.pdf') {
-      // Extraction du texte d'un fichier PDF
       const dataBuffer = fs.readFileSync(filePath);
       const pdfData = await pdfParse(dataBuffer);
       extractedText = pdfData.text;
     } else {
-      // Extraction du texte d'une image
       const { data } = await Tesseract.recognize(filePath, 'eng');
       extractedText = data.text;
     }
 
-    // Génération du fichier texte
-    const textFilePath = createTextFile(req.file.originalname, extractedText);
+    const textFilePath = path.join(__dirname, 'uploads', `${Date.now()}.txt`);
+    fs.writeFileSync(textFilePath, extractedText);
 
-    // Envoie le fichier directement au téléchargement
-    res.download(textFilePath, (err) => {
-      if (err) {
-        console.error('Erreur lors de l\'envoi du fichier :', err);
-        res.status(500).json({ message: 'Erreur lors de l\'envoi du fichier.' });
-      }
-    });
+    console.log(`Fichier texte généré : ${textFilePath}`);
+
+    const analysisResult = await runPythonAnalysis(textFilePath);
+    
+    res.json({ message: 'Analyse réussie', analysis: analysisResult });
+
   } catch (error) {
-    console.error('Erreur lors du traitement :', error.message);
-    res.status(500).json({ message: 'Erreur lors de l\'analyse du fichier.' });
+    console.error('Erreur :', error);
+    res.status(500).json({ message: 'Erreur interne.' });
   }
 });
 
-// Rendre les fichiers téléchargeables
-app.use('/uploads', express.static('uploads'));
-
-// Démarrage du serveur
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
