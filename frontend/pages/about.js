@@ -1,10 +1,9 @@
-import Header from '../components/header';
 import Image from 'next/image';
 
 export default function About() {
     return (
         <div className="min-h-screen flex flex-col">
-            <Header />
+            
             <main className="container mx-auto mt-10 p-4 text-center">
                 {/* Titre */}
                 <h1 className="text-3xl font-bold mb-10 text-center text-black">Qui sommes-nous ?</h1>

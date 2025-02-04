@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
 import { FiDownload, FiFileText, FiImage, FiFile } from 'react-icons/fi';
 import { AiFillFilePdf } from 'react-icons/ai';
 
@@ -65,7 +63,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col justify-between">
-      <Header />
+      
       <main className="container mx-auto mt-10 p-4">
         <h1 className="text-3xl font-bold mb-6 text-center">Téléchargez votre fichier</h1>
 
@@ -115,19 +113,25 @@ export default function Home() {
           <div className="mt-6 bg-gray-100 p-4 rounded-lg shadow-lg">
             <h2 className="text-xl font-bold text-gray-700 mb-4">Résultats de l'analyse</h2>
             <p><strong>Type de contrat :</strong> {analysisResult.type_contrat}</p>
-            <h3 className="text-lg font-semibold text-gray-600 mt-4">Vices détectés :</h3>
+            <h3 className="text-lg font-semibold text-gray-600 mt-4">Clauses détectés :</h3>
+            {analysisResult && Array.isArray(analysisResult.vices) && analysisResult.vices.length > 0 ? (
             <ul className="list-disc pl-5">
               {analysisResult.vices.map((vice, index) => (
-                <li key={index} className="mb-2">
-                  <strong className="text-red-500">{vice[0]}</strong>: {vice[1]}  
-                  <br /><span className="text-sm text-gray-600">⚠️ {vice[2]}</span>
-                </li>
+              <li key={index} className="mb-2">
+                <strong className="text-red-500">{vice[0]}</strong>: {vice[1]}  
+                  <br /><span className="text-sm text-gray-600"> {vice[2]}</span>
+                  <br /><span className="text-sm text-gray-600"> {vice[3]}</span>
+              </li>
               ))}
             </ul>
+) : (
+  <p className="text-gray-500">Aucun vice détecté ou les données sont manquantes.</p>
+)}
+
           </div>
         )}
       </main>
-      <Footer />
+      
     </div>
   );
 }
