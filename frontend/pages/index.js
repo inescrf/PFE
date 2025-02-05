@@ -38,12 +38,16 @@ export default function Home() {
 
     const formData = new FormData();
     formData.append('file', file);
+    console.log("📡 Envoi de la requête vers l'API...", file.name);
+
 
     try {
       const response = await fetch('http://localhost:5001/upload', {
         method: 'POST',
         body: formData,
       });
+
+      console.log("📡 Réponse brute reçue :", response);
 
       if (response.ok) {
         const data = await response.json();
