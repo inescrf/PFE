@@ -40,16 +40,16 @@ def generer_liste_vices(type_contrat):
     """Génère une liste détaillée des vices juridiques en fonction du type de contrat donné."""
     try:
         messages = [
-            {"role": "system", "content": "Vous êtes un expert en droit français spécialisé dans la conformité contractuelle."},
             {"role": "user", "content": f"""
-             
-            En fonction du type de contrat suivant : "{type_contrat}", générez une liste détaillée des vices juridiques critiques, en respectant le format suivant :
+            En fonction du type de contrat suivant : "{type_contrat}", générez une liste détaillée des points de conformité juridique, en respectant le format suivant :
             [
-                [["Description du vice"], ["Pourquoi ce vice est important"], ["Conséquence en cas de non-respect"]],
-                ...
+                [["Description du point conforme"], ["Pourquoi ce point est important"], ["Conséquence positive de sa présence"]],
+                 ...
             ]
+            Formulez chaque point de manière positive. Par exemple, au lieu de "Absence de CGV", utilisez "Présence de CGV".
             Répondez uniquement sous forme d'une liste Python valide.
             """}
+
         ]
         reponse = client.chat.completions.create(messages=messages, model="gpt-4")
         contenu = reponse.choices[0].message.content.strip()
@@ -91,23 +91,27 @@ def detecter_type_contrat(paragraphes):
 def verifier_clauses(paragraphes, liste_vices):
     """Vérifie la conformité des clauses par rapport aux vices identifiés, en ajoutant la citation exacte du texte."""
     try:
-        vices_text = "\n".join([f"- {vice[0]}" for vice in liste_vices])
+        points_conformite_text = "\n".join([f"- {point[0]}" for point in liste_vices])
+
         messages = [
             {"role": "system", "content": "Vous êtes un assistant juridique expert spécialisé en droit français."},
             {"role": "user", "content": f"""
-            Texte du contrat : {' '.join(paragraphes)}
+        Texte du contrat : {' '.join(paragraphes)}
 
-            Vérifiez la conformité des clauses suivantes :
-            {vices_text}
+        Vérifiez si les points de conformité suivants sont respectés :  
+        {points_conformite_text}
 
-            Pour chaque clause, respectez strictement le format suivant :
-            [["Description du vice", "Oui/Non", "Justification détaillée", "Citation exacte du texte"]]
-
-            - La justification doit expliquer pourquoi la clause est conforme ou non.
-            - La citation exacte doit être un passage du texte fourni montrant si la clause est respectée ou violée.
-            - Si aucune citation spécifique n'est trouvée, mentionnez "Aucune citation trouvée" et expliquez pourquoi.
-            """}
+        Pour chaque point, respectez strictement le format suivant :
+        [
+            ["Description du point conforme", "Oui/Non", "Justification détaillée", "Citation exacte du texte"]
         ]
+
+        - La justification doit expliquer pourquoi la clause est conforme ou non.
+        - La citation exacte doit être un passage du texte fourni montrant si la clause est respectée ou violée.
+        - Si aucune citation spécifique n'est trouvée, mentionnez "Aucune citation trouvée" et expliquez pourquoi.
+        """}
+        ]
+
         reponse = client.chat.completions.create(messages=messages, model="gpt-4")
         contenu = reponse.choices[0].message.content.strip()
         

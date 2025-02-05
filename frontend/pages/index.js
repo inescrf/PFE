@@ -125,8 +125,8 @@ export default function Home() {
               {analysisResult.vices.map((vice, index) => (
               <li key={index} className="mb-2">
                 <strong className="text-blue-900">{vice[0]}</strong> :
-                <span className={vice[1] === "Non" ? "text-green-600" : "text-red-600"}>
-                  {vice[1] === "Non" ? <FaCheckCircle className="inline ml-1" /> : <FaTimesCircle className="inline ml-1" />}
+                <span className={vice[1] === "Non" ? "text-red-600" : "text-green-600"}> 
+                  {vice[1] === "Non" ? <FaTimesCircle className="inline ml-1" />: <FaCheckCircle className="inline ml-1" /> }
                 </span>
 
                   <br /><span className="text-sm text-gray-600"> {vice[2]}</span>
