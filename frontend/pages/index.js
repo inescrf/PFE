@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { FiDownload, FiFileText, FiImage, FiFile } from 'react-icons/fi';
 import { AiFillFilePdf } from 'react-icons/ai';
+import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
+
 
 export default function Home() {
   const [file, setFile] = useState(null);
@@ -117,12 +119,16 @@ export default function Home() {
           <div className="mt-6 bg-gray-100 p-4 rounded-lg shadow-lg">
             <h2 className="text-xl font-bold text-gray-700 mb-4">Résultats de l'analyse</h2>
             <p><strong>Type de contrat :</strong> {analysisResult.type_contrat}</p>
-            <h3 className="text-lg font-semibold text-gray-600 mt-4">Clauses détectés :</h3>
+            <h3 className="text-lg font-semibold text-gray-600 mt-4">Clauses détectées :</h3>
             {analysisResult && Array.isArray(analysisResult.vices) && analysisResult.vices.length > 0 ? (
             <ul className="list-disc pl-5">
               {analysisResult.vices.map((vice, index) => (
               <li key={index} className="mb-2">
-                <strong className="text-blue-900">{vice[0]}</strong>: {vice[1]}  
+                <strong className="text-blue-900">{vice[0]}</strong> :
+                <span className={vice[1] === "Non" ? "text-green-600" : "text-red-600"}>
+                  {vice[1] === "Non" ? <FaCheckCircle className="inline ml-1" /> : <FaTimesCircle className="inline ml-1" />}
+                </span>
+
                   <br /><span className="text-sm text-gray-600"> {vice[2]}</span>
                   <br /><span className="text-sm text-gray-600"> {vice[3]}</span>
               </li>
