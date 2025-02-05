@@ -10,10 +10,33 @@ const { spawn } = require('child_process');
 const app = express();
 const PORT = 5001;
 
-// ✅ Configuration CORS - Autoriser uniquement le frontend
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use((req, res, next) => {
+  console.log(`🔎 Requête reçue : ${req.method} ${req.url}`);
+  next();
+});
+
+app.options("/upload", (req, res) => {
+  console.log("✅ Requête OPTIONS reçue et traitée !");
+  res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  res.sendStatus(200); // ✅ On renvoie bien une réponse 200
+});
+
+
+// ✅ Configuration CORS - Autoriser le frontend et OPTIONS
+app.use(cors({
+  origin: "http://localhost:3000",
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"]
+}));
+
+// ✅ Gérer les requêtes OPTIONS (préflight CORS)
+app.options("*", cors());
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
 
 // ✅ Configuration de Multer pour gérer les uploads
 const storage = multer.diskStorage({
@@ -82,7 +105,22 @@ const deleteExistingFile = (filePath) => {
   }
 };
 
+app.options("/upload", (req, res) => {
+  console.log("✅ Requête OPTIONS reçue sur /upload !");
+  res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  res.sendStatus(200);
+});
+
+app.use((req, res, next) => {
+  console.log(`🛑 Middleware DEBUG : ${req.method} ${req.url}`);
+  next();
+});
+
+
 // ✅ Route d'upload et d'analyse
+console.log("🛠️ Initialisation de Multer...");
 app.post('/upload', upload.single('file'), async (req, res) => {
   console.log("📩 Requête reçue sur /upload !");
   console.log("📂 Fichier reçu :", req.file ? req.file.originalname : "Aucun fichier");
@@ -93,16 +131,18 @@ app.post('/upload', upload.single('file'), async (req, res) => {
       return res.status(400).json({ message: 'Aucun fichier téléchargé.' });
     }
 
+    console.log("✅ Fichier bien reçu :", req.file.path);
+
     const filePath = req.file.path;
     const fileExtension = path.extname(req.file.originalname).toLowerCase();
     const allowedExtensions = ['.pdf', '.png', '.jpg', '.jpeg', '.bmp'];
-
-    console.log(`📂 Fichier reçu : ${req.file.originalname} (${fileExtension})`);
 
     if (!allowedExtensions.includes(fileExtension)) {
       console.warn("⚠️ Type de fichier non supporté.");
       return res.status(400).json({ message: 'Type de fichier non supporté.' });
     }
+
+    console.log("🔄 Début du traitement du fichier...");
 
     let extractedText = '';
 
@@ -117,17 +157,18 @@ app.post('/upload', upload.single('file'), async (req, res) => {
       extractedText = data.text;
     }
 
-    const textFilePath = path.join(__dirname, 'uploads', 'cv2.txt');
-    deleteExistingFile(textFilePath);  // Suppression de l'ancien fichier
+    console.log("📝 Texte extrait :", extractedText.substring(0, 100) + "...");
 
+    const textFilePath = path.join(__dirname, 'uploads', 'cv2.txt');
     fs.writeFileSync(textFilePath, extractedText, { encoding: 'utf8' });
 
-    console.log(`📄 Fichier texte généré : ${textFilePath}`);
+    console.log("📄 Fichier texte généré :", textFilePath);
 
     // ✅ Exécuter l'analyse Python
+    console.log("🚀 Lancement de l'analyse Python...");
     const analysisResult = await runPythonAnalysis(textFilePath);
-    
-    console.log("📊 Résultat de l'analyse envoyé au frontend :", analysisResult);
+
+    console.log("📊 Résultat de l'analyse :", analysisResult);
 
     res.json({ message: 'Analyse réussie', analysis: analysisResult });
 
@@ -144,6 +185,7 @@ app.use((err, req, res, next) => {
 });
 
 // ✅ Lancement du serveur
-app.listen(PORT, () => {
-  console.log(`🚀 Serveur lancé sur http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`🚀 Serveur lancé sur http://0.0.0.0:${PORT}`);
 });
+

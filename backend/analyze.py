@@ -103,12 +103,16 @@ def verifier_clauses(paragraphes, liste_vices):
 
         Pour chaque point, respectez strictement le format suivant :
         [
-            ["Description du point conforme", "Oui/Non", "Justification détaillée", "Citation exacte du texte"]
+            ["Description du point conforme", "Oui/Non", "Justification détaillée", "Citation exacte du texte (ou 'Point manquant' si absent)"]
         ]
 
-        - La justification doit expliquer pourquoi la clause est conforme ou non.
-        - La citation exacte doit être un passage du texte fourni montrant si la clause est respectée ou violée.
-        - Si aucune citation spécifique n'est trouvée, mentionnez "Aucune citation trouvée" et expliquez pourquoi.
+        - Si le point est bien présent, donnez une citation exacte du texte montrant sa présence.
+        - Si le point est **absent ou non conforme**, indiquez **"Non"** dans la colonne "Oui/Non".
+            - Donnez une explication détaillée de pourquoi ce point est **problématique ou absent**.
+            - Dans la colonne "Citation exacte", écrivez **"Point manquant"** si rien ne prouve sa présence dans le texte.
+            - Si aucune citation spécifique n'est trouvée, mentionnez **"Aucune citation trouvée"** et expliquez pourquoi.
+
+        Répondez **uniquement** avec une liste Python valide et structurée.
         """}
         ]
 

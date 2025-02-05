@@ -25,40 +25,43 @@ export default function Home() {
     setFile(e.dataTransfer.files[0]);
   };
   const handleFileChange = (e) => setFile(e.target.files[0]);
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMessage('');
     setAnalysisResult(null);
     setIsLoading(true);
-
+  
     if (!file) {
       setMessage('Veuillez sélectionner un fichier.');
       setIsLoading(false);
       return;
     }
+    console.log("📂 Fichier sélectionné :", file);
 
     const formData = new FormData();
     formData.append('file', file);
     console.log("📡 Envoi de la requête vers l'API...", file.name);
-
-
+  
     try {
-      const response = await fetch('http://localhost:5001/upload', {
-        method: 'POST',
-        body: formData,
+      const response = await fetch("http://localhost:5001/upload", {
+        method: "POST",
+        body: formData
       });
-
+  
       console.log("📡 Réponse brute reçue :", response);
-
-      if (response.ok) {
-        const data = await response.json();
-        setMessage('Analyse réussie ! Voici les résultats :');
-        setAnalysisResult(data.analysis);
-      } else {
+  
+      if (!response.ok) {
         const errorData = await response.json();
-        setMessage(errorData.message || 'Erreur lors du traitement du fichier.');
+        throw new Error(errorData.message || 'Erreur lors du traitement du fichier.');
       }
+  
+      const data = await response.json();
+      console.log("Réponse du serveur :", data);
+  
+      setMessage('Analyse réussie ! Voici les résultats :');
+      setAnalysisResult(data.analysis);
+  
     } catch (error) {
       console.error('Erreur réseau :', error);
       setMessage('Erreur réseau. Veuillez réessayer.');
@@ -66,6 +69,7 @@ export default function Home() {
       setIsLoading(false);
     }
   };
+  
 
   return (
     <div className="min-h-screen flex flex-col justify-between">
