@@ -5,7 +5,7 @@ from openai import OpenAI
 import ast
 
 # ✅ Initialisation du client OpenAI
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 def lire_fichier_en_liste(chemin_fichier):
     """Lit un fichier TXT et le convertit en une liste de paragraphes."""
