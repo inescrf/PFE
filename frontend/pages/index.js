@@ -118,7 +118,7 @@ export default function Home() {
             <ul className="list-disc pl-5">
               {analysisResult.vices.map((vice, index) => (
               <li key={index} className="mb-2">
-                <strong className="text-red-500">{vice[0]}</strong>: {vice[1]}  
+                <strong className="text-blue-900">{vice[0]}</strong>: {vice[1]}  
                   <br /><span className="text-sm text-gray-600"> {vice[2]}</span>
                   <br /><span className="text-sm text-gray-600"> {vice[3]}</span>
               </li>
